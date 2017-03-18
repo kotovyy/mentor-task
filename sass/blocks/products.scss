@@ -1,0 +1,114 @@
+.products {
+	background: #ebe7df;
+	padding: 25px 0 23px 0;
+
+	&_list {
+		@include flexbox(flex-start);
+		flex-wrap: wrap;
+
+		&>.main_products_item {
+			margin-bottom: 20px;
+		}
+	}
+
+	&_panel, &_nav {
+		@include flexbox(flex-end);
+	}
+
+	&_panel {
+		margin-bottom: 28px;
+	}
+
+	&_breadcrumbs {
+		@include flexbox(flex-start);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		&_item {
+			color: #bcb5a7;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 700;
+			margin-left: 20px;
+
+			&:first-child {
+				margin-left: 28px;
+			};
+
+			&_link {
+				text-decoration: none;
+				color: #bcb5a7;
+				position: relative;
+
+				&::after {
+					content: url("../img/svg icons/Arrow Icon.svg");
+					position: absolute;
+					right: -13px;
+				};
+			}
+		}
+	}
+
+	&_filter, &_view {
+		@include flexbox(flex-start);
+	}
+
+	&_view {
+		align-items: center;
+	}
+
+	&_filter {
+		color: #bcb5a7;
+	}
+
+	&_view span {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 700;
+		margin-right: 14px;
+	}
+
+	&_view_type {
+		width: 30px;
+		height: 30px;
+		border: 1px solid #bcb5a7;
+		box-sizing: border-box;
+		cursor: pointer;
+
+		&:last-child {
+			margin-left: 9px;
+		};
+
+		&:hover {
+			border: 1px solid #898170;
+		}
+
+		& svg {
+			fill: #bcb5a7;
+			padding: 7px;
+		}
+	}
+
+	&_sort {
+		border: 1px solid #bcb5a7;
+		padding: 5px 12px 5px 35px;
+		color: #bcb5a7;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		margin-left: 20px;
+		cursor: pointer;
+		position: relative;
+
+		&:hover {
+			border: 1px solid #898170;
+		}
+
+		& svg {
+			fill: #bcb5a7;
+			padding-left: 7px;
+		}
+	} 
+
+}

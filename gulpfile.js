@@ -31,7 +31,7 @@ gulp.task("style", function() {
 
 gulp.task("build", function() {
 
-  gulp.src(["index.html", "photo.html", "form.html"])
+  gulp.src(["index.html", "products.html"])
     .pipe(copy())
       .pipe(gulp.dest('build'));
 
@@ -39,9 +39,11 @@ gulp.task("build", function() {
     .pipe(copy())
       .pipe(gulp.dest('build/fonts'));
 
+  gulp.src("js/*")
+    .pipe(copy())
+      .pipe(gulp.dest('build/js'));
+
   gulp.src("css/style.css")
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
 
     return gulp.src("img/**/*.{png,jpg,gif,svg}")

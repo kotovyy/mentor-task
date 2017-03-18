@@ -1,0 +1,40 @@
+.main_img_wrapper {
+	background: #ecebe7 url(../img/slider_add.jpg) no-repeat 80px -105px;
+	height: 261px;
+}
+
+.main_img {
+	display: flex;
+	justify-content: flex-end;
+
+	&_inner_wrapper {
+		max-width: 391px;
+		margin-top: 50px;
+		color: $main-color;
+		font-weight: 300;
+	}
+
+	&_info {
+		@include flexbox(center);
+
+		&> .main_products_item_price {
+			position: static;
+			padding: 25px 10px;
+			width: 72px;
+		}
+	}
+
+	&_title {
+		font-size: 40px;
+		line-height: 40px;	
+	}
+
+	&_detail {
+		font-size: 20px;
+		line-height: 26px;
+		margin-top: 7px;
+	}
+}
+
+
+	

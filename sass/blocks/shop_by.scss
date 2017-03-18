@@ -1,0 +1,81 @@
+.shop_by {
+	background: #2e2e2e;
+
+	&_wrapper {
+		@include flexbox(flex-start);
+		color: #ffffff;
+		padding: 15px 0;
+	}
+
+	&_item {
+		background: $main-color;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		padding: 17px 22px;
+		width: 24%;
+		box-sizing: border-box; 
+		cursor: pointer;
+		position: relative;
+
+		&--title {
+			background: transparent;
+			font-size: 22px;
+		}
+
+		&_name::after {
+			content: url("../img/svg icons/arrow down.svg");
+			position: absolute;
+			right: 30px;
+		}
+	}
+
+	&_menu {
+		position: absolute;
+		background: $main-color;
+		width: 226px;
+		top: 77px;
+		left: 0;
+		display: none;
+
+		&--show {
+			display: block;
+			z-index: 1;
+		}
+
+		&_list {
+			list-style: none;
+			padding: 15px 0;
+			margin: 0;
+			text-align: start;
+		}
+
+		&_item a {
+			text-decoration: none;
+			display: inline-block;
+			vertical-align: top;
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 20px;
+			padding: 6px 0 6px 25px;
+		}
+
+		&_item:hover {
+			background: $highlight-color;
+		}
+
+		&_arrow {
+			position: absolute;
+			top: 74px;
+			left: 107px;
+			border: 5px solid transparent; 
+			border-bottom-color: $main-color;  
+  			border-top: 0;
+  			display: none;
+
+  			&--show {
+  				display: block;
+  			}
+		}
+	}
+}

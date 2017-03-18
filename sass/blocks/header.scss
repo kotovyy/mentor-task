@@ -1,0 +1,134 @@
+.header_top {
+	background: $main-color;
+}
+
+.header_top_wrapper {
+	@include flexbox(flex-start);
+}
+
+.header_logo {
+	margin: 10px 0;
+}
+
+.header_logo_link {
+	color: #57c5a0;
+	font-size: 26px;
+	line-height: 26px;
+	font-weight: normal;
+	font-family: "Aller", Arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header_login_wrapper, .header_menu, .header_basket_wrapper {
+	@include flexbox(flex-start);
+}
+
+.header_login {
+	padding: 14px 25px 0 25px;
+	border-left: 1px solid #383838;
+	border-right: 1px solid #383838;
+}
+
+.header_search_link {
+	text-decoration: none;
+	padding: 15px 23px 15px 0;
+	display: block;
+}
+
+.header_search_logo {
+	fill: #7e7e7e;
+
+	&:hover {
+		fill: #e9e4e4;
+	}
+}
+
+.header_login_link>span {
+	text-transform: lowercase;
+	padding: 0 2px;
+}
+
+.header_login_link {
+	text-decoration: none;
+	color: #7e7e7e;
+	font-size: 11px;
+	line-height: 17px;
+	text-transform: uppercase;
+
+	&:hover {
+		color: #e9e4e4;
+	}
+}
+
+.header_menu_wrapper {
+	background: #ffffff;
+}
+
+.header_menu_list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header_menu_item {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: $main-color;
+	font-family: "Aller", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 21px 23px;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+
+	&:hover {
+		color: #57c5a0;
+	}
+}
+
+.header_basket_icon {
+	fill: #6e6e6e;
+	margin-top: 3px;
+}
+
+.header_basket_link, .header_basket_fav_link {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	padding: 21px 23px;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;	
+}
+
+.header_basket_fav_link {
+	border-right: none;
+}
+
+.header_basket_fav_num, .header_basket_num {
+	display: inline-block;
+	vertical-align: top;
+	background: #adadad;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: 700;
+	font-family: "Aller", Arial, sans-serif;
+	border-radius: 3px;
+	margin-left: 8px;
+	padding-top: 2px;
+	box-sizing: border-box;
+}
+
+.header_basket_num {
+	background: #57c5a0;
+}
+

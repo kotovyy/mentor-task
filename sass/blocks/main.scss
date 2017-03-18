@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/Aller_Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-size: 12px;
+	line-height: 16px;
+	color: $main-color;
+	font-weight: normal;
+	font-family: "Aller", Arial, sans-serif;
+	font-style: normal; 
+	margin: 0;
+	padding: 0;
+}
+
+.main_wrapper {
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 942px;
+	margin: 0 auto;
+}

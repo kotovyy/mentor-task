@@ -1,0 +1,52 @@
+.specials {
+	background: $main-color;
+
+	&_list {
+		@include flexbox(flex-start);
+	}
+}
+
+.specials_item {
+	width: 300px;
+	height: 180px;
+	margin: 25px 20px 25px 0;
+	position: relative;
+
+	&--first {
+		background: url(../img/main1.jpg) 50% 15% no-repeat;
+	}
+	&--second {
+		background: url(../img/main2.jpg) 50% 50% no-repeat;
+	}
+	&--thirth {
+		background: url(../img/main3.jpg) 100% 0 no-repeat;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.specials_item_title {
+	position: absolute;
+	top: 50px;
+	left: 22%;
+	background: #2b2b2b;
+	opacity: 0.9;
+	padding: 16px 25px;
+	text-align: center;
+
+	&--long {
+		left: 12%;
+	}
+
+	&_link {
+		color: #ffffff;
+		font-size: 25px;
+		line-height: 31px;
+		font-weight: 300;
+		font-family: "Aller", Arial, sans-serif;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,158 @@
+.footer {
+	background: #2e2e2e;
+	padding: 22px 0 30px 0;
+
+	&_wrapper {
+		@include flexbox(center);
+	}
+
+	&_copy {
+		color: #979797;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	&_links_item {
+		color: #747474;
+		font-size: 12px;
+		line-height: 18px;
+		text-decoration: none;
+		position: relative;
+		margin-left: 10px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:hover {
+			color: #B3B3B3;
+		}
+
+		&:first-child::before {
+			content: "";
+		}
+
+		&::before {
+			content: "/";
+			position: absolute;
+			left: -9px;
+		};
+	}
+
+	&_add {
+		background: $main-color;
+
+		&_widgets {
+			padding: 50px 0 35px 0;
+			border-bottom: 1px solid #1c1c1c;
+		}
+
+		&_wrapper, &_social_wrapper {
+			@include flexbox(flex-start);
+			margin: 0 40px;
+		}
+
+		&_widget {
+			width: 250px;
+
+			&_detail_text span {
+				color: #57c5a0;
+			}
+
+			&_detail_date {
+				margin-top: 8px;
+			}
+		}
+
+		&_widget_detail_twit:first-child {
+			margin-bottom: 12px;
+		}
+
+		&_widget_title {
+			color: #7d7d7d;
+			font-size: 14px;
+			line-height: 20px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		&_widget_detail {
+			color: #a4a4a4;
+			font-size: 12px;
+			line-height: 18px;
+			font-style: italic;
+		}
+
+		&_social {
+			padding: 38px 0 45px 0;
+		}
+
+		&_social_subcribe input {
+			outline: 0;
+			border: 0;
+			background: #2e2e2e;
+			color: #727272;
+			padding: 9px 13px;
+			width: 215px;
+			box-sizing: border-box;
+			font-size: 12px;
+			font-style: italic;
+			line-height: 18px;
+		}
+
+		&_social_subcribe_button {
+			height: 36px;
+			width: 36px;
+			background: #7d7d7d;
+			border: 0;
+			outline: 0;
+
+			& svg {
+				fill: #2e2e2e;
+				padding-top: 3px;
+			}
+		}
+
+		&_social_subcribe {
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+		}
+
+		&_social_links_list {
+			@include flexbox(flex-start);
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+
+		&_social_links_item {
+			background: #2e2e2e;
+			margin-left: 8px; 
+		}
+
+		&:first-child {
+			margin-left: 0;
+		};
+	}
+}
+
+.social_link {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	padding-top: 9px;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	box-sizing: border-box;
+
+	&:hover svg{
+		fill: #B3B3B3;
+	};
+
+	& svg {
+		fill: #7d7d7d;
+	}
+}

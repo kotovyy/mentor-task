@@ -1,17 +1,9 @@
 {
-  "name": "31739-pink",
+  "name": "personal",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект",
   "author": "Анастасия Корбут",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/31739-pink.git"
-  },
-  "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/31739-pink/issues"
-  },
-  "homepage": "https://github.com/htmlacademy-adaptive/31739-pink",
   "devDependencies": {
     "autoprefixer": "6.3.3",
     "browser-sync": "2.11.1",
